@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Monoton&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+textarea,
+input,
+.double-button {
+  background: #cccdd2;
+}
+body {
+  background: #020516;
+}
+.atbash {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.cipher {
+  width: 400px;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 20px;
+  font-family: "Monoton", cursive;
+  background: linear-gradient(95.95deg, #4351c9 16.6%, #a11dc1 54.72%);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-size: 2.5em;
+  /* min-width: 300px;
+  z-index: 2; */
+}
+.h1-block {
+  position: relative;
+}
+.sh-rect {
+  background: #5e73e2;
+  border-radius: 3px;
+  filter: blur(100px);
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  z-index: 10;
+  top: 0;
+  left: 0;
+}
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 55px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  padding-left: 10px;
+  line-height: 36px;
+  transition: 0.5s;
+  border: 5px solid transparent;
+}
+input::placeholder {
+  color: #020516;
+  opacity: 1;
+}
+input:focus {
+  border: 5px solid #00f6ff;
+}
+.final-message p,
+.options {
+  color: #fff;
+  text-align: left;
+}
+.double-button {
+  position: relative;
+  border-radius: 6px;
+  margin-top: 5px;
+  height: 55px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.double-button button {
+  border-radius: 6px;
+  font-size: 20px;
+  width: 50%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #020516;
+  position: absolute;
+  z-index: 2;
+}
+.double-button .dec {
+  left: 50%;
+}
+.choce {
+  background: #353849 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  border-radius: 6px;
+}
+.to-dec,
+.to-enc,
+.choce-col {
+  transition: 0.5s;
+}
+.to-enc {
+  transform: translateX(0);
+}
+.to-dec {
+  transform: translateX(100%);
+}
+.choce-col {
+  color: #fff !important;
+}
+textarea:focus {
+  outline: none;
+}
+textarea {
+  width: 109%;
+  margin-left: -4%;
+  border-radius: 6px;
+  height: 150px;
+  padding: 30px;
+  font-size: 20px;
+  color: #020516;
+  border: none;
+  background: url(../public/img/area-border.png);
+  background-size: 100% 100%;
+}
+.circle {
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.line {
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.main {
+  height: 350px;
+  position: absolute;
+  bottom: 0px;
+  left: 50px;
+}
